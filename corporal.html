@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pintura Corporal</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="page-landing.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=K2D&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body style="overflow-x: hidden; overflow-y: visible;">
+
+    <style> 
+
+
+h4 {
+    font-size: 1.3em;
+    font-family: k2d;
+    font-weight: 1;
+}
+
+
+.texto1 {
+        max-width: 45%;
+        text-align: center;
+        margin-left: 2.5%;
+        color: #D4D4D4;
+        float: left;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        
+
+    }
+
+    
+    .foto {
+        width: 45%;
+        float: right;
+        margin-right: 2%;
+        padding-bottom: 1%;
+        margin-top: 1.5%;
+
+    }
+
+    .texto2 {
+        float: right;
+        max-width: 45%;
+        text-align: center;
+        margin-right: 3.5%;
+        font-family: k2d;
+        color: #D4D4D4;
+        margin-top: 1.5%;
+
+    }
+
+
+    .foto2 {
+        float: left;
+        width: 45%;
+        margin-left: 2%;
+        padding-bottom: 1%;
+        margin-top: 1.5%;
+
+    }  
+
+    .box1 {
+        background-color: #24473B;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        border-radius: 20px;
+        position: absolute;
+
+    }
+
+    .box2 {
+        background-color: #24473B;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        border-radius: 20px;
+        position: absolute;
+        margin-top: 20%;
+
+    }
+
+    .titulo {
+        max-width: 700px;
+        background-color: #8F8F8F80;
+        font-size: 55px;
+        border-radius: 10px;
+    }
+
+    .t1 {
+        color: #24473B;
+        font-family: KronaOne;
+    }
+
+    .t2 {
+        color: #346553;
+        font-family: KronaOne;
+    }
+
+    @media (max-width: 1400px) {
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: jura;
+}
+footer{
+    background-color: #2A5244;
+    padding: 50px 0;
+    margin-top:33%;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 33%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #2A5244;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #2A5244;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2A5244;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+    </style>
+
+    <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <button class="home"><a href="index.html"> <img class="logo" src="logo.png" width="150"> </a></button></span>
+    <div class="container">
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <div>
+            <div class="dev"> <button class="botao2"> <a class="a" href="desenvolvedores.html"> Desenvolvedores </a> </button> </div> 
+            <div class="login"> <button class="botao1"> <a class="a" href="login.html"> Login </a> </button> </div>
+        </div>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <br> <br>
+
+                    <li class="menu-item"><a href="index.html" class="menu-link"> Home </a></li> <br> <br>
+                    <li class="menu-item"><a href="instituição.html" class="menu-link">Artistas e instituições</a></li>
+                    <li class="menu-item"><a href="importancia.html" class="menu-link">Importância dos artesanatos</a></li>
+                    <li class="menu-item"><a href="origem.html" class="menu-link">Origem dos artesanatos</a></li> <br> 
+                    <li class="menu-item"><a href="acessorios.html" class="menu-link">Acessórios</a></li>
+                    <li class="menu-item"><a href="adorno.html" class="menu-link">Adornos</a></li>
+                    <li class="menu-item"><a href="armas.html" class="menu-link">Armas</a></li>
+                    <li class="menu-item"><a href="plumaria.html" class="menu-link">Arte plumária</a></li>
+                    <li class="menu-item"><a href="ceramica.html" class="menu-link">Cerâmica</a></li>
+                    <li class="menu-item"><a href="musicais.html" class="menu-link">Instrumentos musicais</a></li>
+                    <li class="menu-item"><a href="mascaras.html" class="menu-link">Máscaras</a></li>
+                    <li class="menu-item"><a href="decorativos.html" class="menu-link">Objetos decorativos</a></li>
+                    <li class="menu-item"><a href="corporal.html" class="menu-link">Pintura corporal</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    </nav> 
+
+  
+
+    <br>
+
+    <center> <div class="titulo"> <div class="t1"> PINTURAS </div> <div class="t2"> CORPORAIS </div></div></center> <br>
+    <br>
+ 
+    <div class="box1">
+        <div class="texto1">
+            <H4>A pintura corporal é uma forma de arte fundamental em muitas culturas indígenas. Utilizada em cerimônias religiosas, rituais de passagem e eventos sociais, a pintura corporal não apenas embeleza o corpo, mas também comunica uma variedade de significados, desde a identidade tribal até crenças espirituais. É uma expressão viva da conexão entre o indivíduo e sua cultura. E, consequentemente, as pinturas corporais são um tipo de arte exclusiva dos indígenas. </H4> 
+        </div>
+    
+        <img class="foto" src="corporal1.png"> <br>
+    </div>
+     
+    <div class="box2">
+        <img class="foto2" src="corporal2.png">
+        
+        <div class="texto2">
+            <h4> Em resumo, o artesanato indígena é uma celebração da criatividade humana e da conexão com a cultura e a natureza. Cada tema abordado aqui representa uma faceta única e rica da herança indígena, desempenhando um papel vital na preservação da cultura, na comunicação espiritual e no enriquecimento da diversidade cultural do mundo.</h4>
+        </div>
+    </div>
+
+        
+
+    <br><br>
+
+    
+     
+
+
+<footer>
+    <br>
+    <div class="container-footer">
+        <div class="row-footer">
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Quem somos </a></li>
+                    <li><a href=""> nossos serviços </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                    <li><a href="quiz.html"> Quiz Arte Raiz</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Deixe seu feedback!</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="text" placeholder="Deixe seu comentario" required>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                </div>
+
+            </div>
+            <!--end footer col-->
+        </div>
+    </div>
+</footer>
+
+
+    
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

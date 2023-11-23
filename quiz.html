@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Quiz Arte Raiz</title>
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="page-landing.css">
+  <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=K2D&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden; overflow-y: visible;">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: k2d;
+}
+
+.center {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 450px;
+  margin-top: 3%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 1.2em;
+  
+}
+
+.options {
+  margin-bottom: 20px;
+  margin-left: 4%;
+  font-size: 1.2em;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #38210c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  margin-bottom: 2%;
+  margin-left: 3%;
+}
+
+.button:hover {
+  background-color: #30a936;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.hide{
+  display: none;
+}
+
+.titulo {
+        max-width: 700px;
+        background-color: #8F8F8F80;
+        font-size: 55px;
+        border-radius: 10px;
+    }
+
+    .t1 {
+        color: #24473B;
+		font-family: KronaOne;
+    }
+
+    .t2 {
+        color: #346553;
+		font-family: KronaOne;
+    }
+
+
+
+  </style>
+
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1"> <button class="home"><a href="index.html"> <img class="logo" src="logo.png" width="150"> </a></button></span>
+  <div class="container">
+      <div class="hamburger">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+      </div>
+      <div>
+          <div class="dev"> <button class="botao2"> <a class="a" href="desenvolvedores.html"> Desenvolvedores </a> </button> </div> 
+          <div class="login"> <button class="botao1"> <a class="a" href="login.html"> Login </a> </button> </div>
+      </div>
+      <aside class="sidebar">
+          <nav>
+              <ul class="menu">
+                  <br> <br>
+
+                  <li class="menu-item"><a href="index.html" class="menu-link"> Home </a></li> <br> <br>
+                  <li class="menu-item"><a href="instituição.html" class="menu-link">Artistas e instituições</a></li>
+                  <li class="menu-item"><a href="importancia.html" class="menu-link">Importância dos artesanatos</a></li>
+                  <li class="menu-item"><a href="origem.html" class="menu-link">Origem dos artesanatos</a></li> <br> 
+                  <li class="menu-item"><a href="acessorios.html" class="menu-link">Acessórios</a></li>
+                  <li class="menu-item"><a href="adorno.html" class="menu-link">Adornos</a></li>
+                  <li class="menu-item"><a href="armas.html" class="menu-link">Armas</a></li>
+                  <li class="menu-item"><a href="plumaria.html" class="menu-link">Arte plumária</a></li>
+                  <li class="menu-item"><a href="ceramica.html" class="menu-link">Cerâmica</a></li>
+                  <li class="menu-item"><a href="musicais.html" class="menu-link">Instrumentos musicais</a></li>
+                  <li class="menu-item"><a href="mascaras.html" class="menu-link">Máscaras</a></li>
+                  <li class="menu-item"><a href="decorativos.html" class="menu-link">Objetos decorativos</a></li>
+                  <li class="menu-item"><a href="corporal.html" class="menu-link">Pintura corporal</a></li>
+
+              </ul>
+          </nav>
+      </aside>
+  </div>
+  </nav> <BR>
+
+  <center> <div class="titulo"> <div class="t1"> QUIZ </div> <div class="t2"> ARTE RAIZ</div></div></center>  
+
+
+  <div class="center">
+  <div class="container">
+    <h1>Quiz Arte Raiz</h1><br>
+      <div id="quiz"></div>
+        <div id="result" class="result"></div> <br>
+          <button id="submit" class="button">Continuar</button>
+          <button id="retry" class="button hide">Tentar Novamente</button>
+          <button id="showAnswer" class="button hide">Mostrar Respostas</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  const quizData = [
+    {
+      question: 'Quais são as duas Instuições Citadas no Site?',
+      options: ['Novo e Yashi', 'Vyapavẽ e Porã', 'Eterei e Yty', 'Hutukara e Kabu'],
+      answer: 'Hutukara e Kabu',
+    },
+    {
+      question: 'As Máscaras Indígenas tem algum significado?',
+      options: ['Não, São Apenas Enfeites', 'Sim, carregam cultura através delas', 'Não Sei', 'Sim, Por causa do Lula'],
+      answer: 'Sim, carregam cultura através delas',
+    },
+    {
+      question: 'Quem são os Desenvolvedores do Site?',
+      options: ['Jean, Marcelo, Cristian e Roger', 'Diego, Heitor, João Pedro e Gabriel', 'Iudi, Gustavo, Diogo, Igor', 'Neymar, Roberta, Clarice, Honda'],
+      answer: 'Iudi, Gustavo, Diogo, Igor',
+    },
+    {
+      question: 'Os Instrumentos Indígenas são produzidos com que materiais?',
+      options: ['Pedra e Faca', 'Madeira e Água', 'Materiais Gerais da Natureza', 'Pedaços de Indígenas Mortos'],
+      answer: 'Materiais Gerais da Natureza',
+    },
+    {
+      question: 'Pra que serve as Artes Plumárias Indígenas?',
+      options: [
+        'Nada',
+        'Para Brincar',
+        'Para tornar as crianças fortes',
+        'Para utilizar em rituais de sua cultura',
+      ],
+      answer: 'Para utilizar em rituais de sua cultura',
+    },  
+  ];
+  
+  const quizContainer = document.getElementById('quiz');
+  const resultContainer = document.getElementById('result');
+  const submitButton = document.getElementById('submit');
+  const retryButton = document.getElementById('retry');
+  const showAnswerButton = document.getElementById('showAnswer');
+  
+  let currentQuestion = 0;
+  let score = 0;
+  let incorrectAnswers = [];
+  
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  
+  function displayQuestion() {
+    const questionData = quizData[currentQuestion];
+  
+    const questionElement = document.createElement('div');
+    questionElement.className = 'question';
+    questionElement.innerHTML = questionData.question;
+  
+    const optionsElement = document.createElement('div');
+    optionsElement.className = 'options';
+  
+    const shuffledOptions = [...questionData.options];
+    shuffleArray(shuffledOptions);
+  
+    for (let i = 0; i < shuffledOptions.length; i++) {
+      const option = document.createElement('label');
+      option.className = 'option';
+  
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'quiz';
+      radio.value = shuffledOptions[i];
+  
+      const optionText = document.createTextNode(shuffledOptions[i]);
+  
+      option.appendChild(radio);
+      option.appendChild(optionText);
+      optionsElement.appendChild(option);
+    }
+  
+    quizContainer.innerHTML = '';
+    quizContainer.appendChild(questionElement);
+    quizContainer.appendChild(optionsElement);
+  }
+  
+  function checkAnswer() {
+    const selectedOption = document.querySelector('input[name="quiz"]:checked');
+    if (selectedOption) {
+      const answer = selectedOption.value;
+      if (answer === quizData[currentQuestion].answer) {
+        score++;
+      } else {
+        incorrectAnswers.push({
+          question: quizData[currentQuestion].question,
+          incorrectAnswer: answer,
+          correctAnswer: quizData[currentQuestion].answer,
+        });
+      }
+      currentQuestion++;
+      selectedOption.checked = false;
+      if (currentQuestion < quizData.length) {
+        displayQuestion();
+      } else {
+        displayResult();
+      }
+    }
+  }
+  
+  function displayResult() {
+    quizContainer.style.display = 'none';
+    submitButton.style.display = 'none';
+    retryButton.style.display = 'inline-block';
+    showAnswerButton.style.display = 'inline-block';
+    resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
+  }
+  
+  function retryQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    incorrectAnswers = [];
+    quizContainer.style.display = 'block';
+    submitButton.style.display = 'inline-block';
+    retryButton.style.display = 'none';
+    showAnswerButton.style.display = 'none';
+    resultContainer.innerHTML = '';
+    displayQuestion();
+  }
+  
+  function showAnswer() {
+    quizContainer.style.display = 'none';
+    submitButton.style.display = 'none';
+    retryButton.style.display = 'inline-block';
+    showAnswerButton.style.display = 'none';
+  
+    let incorrectAnswersHtml = '';
+    for (let i = 0; i < incorrectAnswers.length; i++) {
+      incorrectAnswersHtml += `
+        <p>
+          <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
+          <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+          <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
+        </p>
+      `;
+    }
+  
+    resultContainer.innerHTML = `
+      <p>You scored ${score} out of ${quizData.length}!</p>
+      <p>Incorrect Answers:</p>
+      ${incorrectAnswersHtml}
+    `;
+  }
+  
+  submitButton.addEventListener('click', checkAnswer);
+  retryButton.addEventListener('click', retryQuiz);
+  showAnswerButton.addEventListener('click', showAnswer);
+  
+  displayQuestion();
+   </script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Instituições</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="page-landing.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=K2D&display=swap" rel="stylesheet">
+</head>
+<body style="overflow-x: hidden; overflow-y: visible;">
+
+
+<style>
+
+  body {
+    font-family: k2d;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: KronaOne;
+    color: #fff;
+  }
+
+  h3 {
+    font-family: jura;
+    font-size: 19px;
+    color: #fff;
+    float: left;
+    margin-left: 4%;
+  }
+
+  .h4 {
+    font-family: jura;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    margin-left: 6%;
+    margin-top: 2.5%;
+
+  }
+  
+  .meio {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.criar {
+    background-color: #807E5F;
+    color: #fff;
+    border: none;
+    padding: 10px 55px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    font-family: jura;
+    font-size: 20px;
+}
+
+
+
+  .login-container {
+    background-color: #24473B;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    text-shadow:5cm ;
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .login-container input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .entrar {
+    background-color: #807E5F;
+    color: #fff;
+    border: none;
+    padding: 10px 118px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 93%;
+    font-family: jura;
+    font-size: 20px;
+  }
+
+  .login-container button:hover {
+    background-color: #55522f;
+  }
+  
+  .conta {
+	text-decoration: underline;
+	}
+	
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: k2d;
+}
+footer{
+    background-color: #2A5244;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 33%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #2A5244;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #2A5244;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2A5244;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+	
+
+</style>
+
+
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1"> <button class="home"><a href="index.html"> <img class="logo" src="logo.png" width="150"> </a></button></span>
+  <div class="container">
+      <div class="hamburger">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+      </div>
+      <div>
+          <div class="dev"> <button class="botao2"> <a class="a" href="desenvolvedores.html"> Desenvolvedores </a> </button> </div> 
+          <div class="login"> <button class="botao1"> <a class="a" href="login.html"> Login </a> </button> </div>
+      </div>
+      <aside class="sidebar">
+          <nav>
+              <ul class="menu">
+                  <br> <br>
+
+                  <li class="menu-item"><a href="index.html" class="menu-link"> Home </a></li> <br> <br>
+                  <li class="menu-item"><a href="instituição.html" class="menu-link">Artistas e instituições</a></li>
+                  <li class="menu-item"><a href="importancia.html" class="menu-link">Importância dos artesanatos</a></li>
+                  <li class="menu-item"><a href="origem.html" class="menu-link">Origem dos artesanatos</a></li> <br> 
+                  <li class="menu-item"><a href="acessorios.html" class="menu-link">Acessórios</a></li>
+                  <li class="menu-item"><a href="adorno.html" class="menu-link">Adornos</a></li>
+                  <li class="menu-item"><a href="armas.html" class="menu-link">Armas</a></li>
+                  <li class="menu-item"><a href="plumaria.html" class="menu-link">Arte plumária</a></li>
+                  <li class="menu-item"><a href="ceramica.html" class="menu-link">Cerâmica</a></li>
+                  <li class="menu-item"><a href="musicais.html" class="menu-link">Instrumentos musicais</a></li>
+                  <li class="menu-item"><a href="mascaras.html" class="menu-link">Máscaras</a></li>
+                  <li class="menu-item"><a href="decorativos.html" class="menu-link">Objetos decorativos</a></li>
+                  <li class="menu-item"><a href="corporal.html" class="menu-link">Pintura corporal</a></li>
+
+              </ul>
+          </nav>
+      </aside>
+  </div>
+  </nav> <br>
+
+
+  <div class="meio">
+  <div class="login-container">
+
+    <h2>Faça seu Login!</h2> 
+
+    <form action="index.html">
+    
+    <h3> Email</h3> 
+      <input class="email" type="text" name="username"  required>  
+    
+    <h3> Senha</h3> 
+      <input class="senha" type="password" name="password"  required> <br>
+
+      <a href="index.html"><button class="entrar" type="submit">Entrar</button> </a><br> <br>
+    </form>
+      <h4 class="h4"> Não tem uma conta?</h4> <a href="cadastro.html"><button class="criar"> Crie uma!</button> </a>
+    </form>
+
+  </div>
+  </div>
+  
+  
+  <footer>
+        <br>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href="quiz.html"> Quiz Arte Raiz</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Deixe seu feedback!</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="text" placeholder="Deixe seu comentario" required>
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+    
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+    
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+  
+  
+</body>
+
+<script src="script.js"></script>
+</html>
+

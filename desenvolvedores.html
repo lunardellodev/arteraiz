@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Desenvolvedores</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="page-landing.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=K2D&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="overflow-x: hidden; overflow-y: visible;">
+
+    <style>
+   
+
+.profile {
+    display: flex;
+    background-color: #24473B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: ;
+    height: 275px;
+    margin: 0 auto;
+    align-items: center;
+    font-family: k2d;
+}
+
+.profile-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.2); /* Zoom ao passar o mouse */
+}
+
+.profile-info {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h1 {
+    font-family: k2d;
+    font-size: 35px;
+}
+
+.titulo {
+    margin-left: 40px;
+    font-size: 40px;
+    font-family: k2d;
+}
+
+h4 {
+    font-family: k2d;
+    font-size: 18px;
+}
+
+#iudi {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 60px;
+    color: #D4D4D4;
+    text-align: justify;
+    width: 37%;
+
+}
+
+#diogo {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 40px;
+    color: #D4D4D4;
+    text-align: justify;
+    width: 37%;
+
+
+}
+
+#igor {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 430px;
+    color: #D4D4D4;
+    text-align: justify;
+    width: 37%;
+
+}
+
+#gustavo {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 450px;
+    color: #D4D4D4;
+    text-align: justify;
+    width: 37%;
+
+
+
+}
+
+@media (max-width: 800px) {
+    #gustavo,
+    #iudi,
+    #diogo,
+    #igor {
+       margin-top: 0px;
+       margin-left: 20px;
+       position: relative;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .profile {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-info {
+        flex: 0;
+    }
+}
+
+ 
+.titulo {
+        max-width: 700px;
+        background-color: #8F8F8F80;
+        font-size: 48px;
+        border-radius: 10px;
+    }
+
+    .t1 {
+        color: #24473B;
+        font-family: KronaOne;
+    }
+
+    .t2 {
+        color: #346553;
+        font-family: KronaOne;
+    }
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: k2d;
+}
+footer{
+    background-color: #2A5244;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 33%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #2A5244;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #2A5244;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2A5244;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    footer {
+        top: 30%;
+    }
+}
+
+    
+    </style>
+
+    
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <button class="home"><a href="index.html"> <img class="logo" src="logo.png" width="150"> </a></button></span>
+    <div class="container">
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <div>
+            <div class="dev"> <button class="botao2"> <a class="a" href="desenvolvedores.html"> Desenvolvedores </a> </button> </div> 
+            <div class="login"> <button class="botao1"> <a class="a" href="login.html"> Login </a> </button> </div>
+        </div>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <br> <br>
+
+                    <li class="menu-item"><a href="index.html" class="menu-link"> Home </a></li> <br> <br>
+                    <li class="menu-item"><a href="instituição.html" class="menu-link">Artistas e instituições</a></li>
+                    <li class="menu-item"><a href="importancia.html" class="menu-link">Importância dos artesanatos</a></li>
+                    <li class="menu-item"><a href="origem.html" class="menu-link">Origem dos artesanatos</a></li> <br> 
+                    <li class="menu-item"><a href="acessorios.html" class="menu-link">Acessórios</a></li>
+                    <li class="menu-item"><a href="adorno.html" class="menu-link">Adornos</a></li>
+                    <li class="menu-item"><a href="armas.html" class="menu-link">Armas</a></li>
+                    <li class="menu-item"><a href="plumaria.html" class="menu-link">Arte plumária</a></li>
+                    <li class="menu-item"><a href="ceramica.html" class="menu-link">Cerâmica</a></li>
+                    <li class="menu-item"><a href="musicais.html" class="menu-link">Instrumentos musicais</a></li>
+                    <li class="menu-item"><a href="mascaras.html" class="menu-link">Máscaras</a></li>
+                    <li class="menu-item"><a href="decorativos.html" class="menu-link">Objetos decorativos</a></li>
+                    <li class="menu-item"><a href="corporal.html" class="menu-link">Pintura corporal</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    </nav> <br> <br>
+
+    <center> <div class="titulo"> <div class="t1"> PÁGINA DE </div> <div class="t2"> DESENVOLVEDORES</div></div></center>
+
+
+    <div class="profile" id="gustavo">
+        <div class="profile-image-container">
+            <img src="gustavo.png" alt="Foto de Perfil" class="profile-image">
+        </div>
+        <div class="profile-info">
+            <h1>Gustavo Soares</h1> <br>
+            <p><h4>Responsável pela escrita norma ABNT do trabalho.</h4></p>
+        </div>
+    </div> <br>
+
+    <div class="profile" id="igor">
+        <div class="profile-image-container">
+            <img src="igor.png" alt="Foto de Perfil" class="profile-image">
+        </div>
+        <div class="profile-info">
+            <h1>Igor Lundardello</h1><br>
+            <p><h4>Responsável pelo UX e UI Design da página, é um dos três desenvolvedores Front-End do Site e escreveu o contéudo do site.</h4></p>
+        </div>
+    </div> <br>
+
+    <div class="profile" id="iudi">
+        <div class="profile-image-container">
+            <img src="iudi.png" alt="Foto de Perfil" class="profile-image">
+        </div>
+        <div class="profile-info">
+            <h1>João Iudi</h1> <br>
+            <p><h4>Responsável pelo Empathy Map do trabalho e pelo desenvolvimento do site.</h4></p>
+        </div>
+    </div><br>
+
+    <div class="profile" id="diogo">
+        <div class="profile-image-container">
+            <img src="diogo.png" alt="Foto de Perfil" class="profile-image">
+        </div>
+        <div class="profile-info">
+            <h1>Diogo Furtado</h1> <br>
+            <p><h4>Responsável pelo desenvolvimento do site e pelas imagens do site.</h4></p>
+        </div>
+    </div>
+ <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <footer>
+        <br>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href="quiz.html"> Quiz Arte Raiz</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Deixe seu feedback!</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="text" placeholder="Deixe seu comentario" required>
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+    
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+    
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+   
+</body>
+
+<script src="script.js"></script>
+</html>

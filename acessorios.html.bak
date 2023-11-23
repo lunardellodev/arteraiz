@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="page-landing.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+</head>
+<body style="overflow-x: hidden; overflow-y: visible;">
+
+    <style> 
+
+	h1 {
+		font-family: livvic;
+        font-size: 45px; 
+	}
+	
+	h3 {
+		font-family: mukta;
+		font-size: 18px;
+		text-align: justify;
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+	
+	h4 {
+		font-family: mukta;
+		font-size: 15px;
+		max-width: 500px;
+		margin-left: 65px;
+		text-align: justify;
+	}
+	
+	.imagem1 {
+            width: 500px;
+            border-radius: 100px;
+            display: flex;
+            margin-left: 65px;
+        }
+
+        .imagem2 {
+            width: 500px;
+            border-radius: 100px;
+            display: flex;
+            margin-right: px;
+            margin-left: 300px;
+
+        }
+
+        .imagens {
+            display: flex;
+        }
+
+
+    </style>
+
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <button class="home"><a href="index.html"> <img class="logo" src="logo.png" width="150"> </a></button></span>
+    <div class="container">
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <div>
+            <div class="dev"> <button class="botao2"> <a class="a" href="desenvolvedores.html"> Desenvolvedores </a> </button> </div> 
+            <div class="login"> <button class="botao1"> <a class="a" href="login.html"> Login </a> </button> </div>
+        </div>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <br> <br>
+
+                    <li class="menu-item"><a href="instituição.html" class="menu-link">Artistas e instituições</a></li>
+                    <li class="menu-item"><a href="importancia.html" class="menu-link">Importância dos artesanatos</a></li>
+                    <li class="menu-item"><a href="origem.html" class="menu-link">Origem dos artesanatos</a></li> <br> 
+                    <li class="menu-item"><a href="#" class="menu-link">Acessórios</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Adornos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Armas</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Arte plumária</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Cerâmica</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Instrumentos musicais</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Máscaras</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Objetos decorativos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Pintura corporal</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    </nav> <br>
+	
+	<center> <h1> Acessórios </h1> </center> <br>
+	<h3> &nbsp&nbsp&nbsp&nbspOs acessórios do artesanato indígena incluem uma ampla gama de peças, como colares, pulseiras, brincos e cintos. Esses acessórios não são apenas adornos pessoais; eles também têm significados culturais profundos. Muitos são feitos de materiais naturais, como sementes, conchas, dentes de animais e pedras, refletindo a relação das comunidades com o meio ambiente e seus valores espirituais.</h3>
+	<p> <h3> &nbsp&nbsp&nbsp&nbspAlém disso, os acessórios desempenham um papel importante nas cerimônias e rituais indígenas, onde são usados para comunicar status social, identidade tribal e até mesmo propósitos espirituais. Muitas vezes, essas peças são usadas em danças tradicionais, ritos de passagem e celebrações culturais, destacando seu valor como elementos vivos da cultura indígena. </h3> </p> <br> <br> 
+	
+	<div class="imagens">
+			<div class="col-lg-4">
+				<img class="imagem1" src="img.png"> <br>
+				<div class="texto1">
+					<h4>Esses acessórios são frequentemente elaboradamente decorados com cores e padrões simbólicos que contam histórias e transmitem a identidade cultural das comunidades indígenas. Por exemplo, certos padrões podem representar a conexão com a natureza, enquanto outros podem narrar mitos e lendas tradicionais. </h4>
+				</div>
+        </div> <<br>
+        
+		<div class="col-lg-4">
+            <img class="imagem2" src="img2.png"> 
+        </div>
+    </div>
+	
+	
+	
+	
+	
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
